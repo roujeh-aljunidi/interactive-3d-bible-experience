@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <title>good samaritan VR</title>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene>
+
+        <a-sky color="#87CEEB"></a-sky>
+
+        <a-plane
+                rotation="-90 0 0"
+                width="50"
+                height="50"
+                color="#D8c28a">
+        </a-plane>
+
+        <a-plane
+        rotation="-90 0 0"
+        position="0 0.01 -10
+        width="3"
+        height="30"
+        color="#a67c52">
+    </a-plane>
+
+        <a-box
+        position="-1 0.5 -10"
+        width="1.5"
+        height="0.3"
+        depth="0.7"
+        color="#c19a6b">
+    </a-box>
+
+        <a-text
+            value="you see an injured  traveler beside the road."
+            position="0 3 -8"
+            align="center"
+            width="12"
+            color="white">
+        </a-text>
+
+        <a-text
+            value="what would you do?"
+            position="0 2 -8"
+            align="center"
+            color="white">
+        </a-text>
+
+        <a-box 
+        id="helpButton"
+        class="clickable"
+        position="-2 1 -6"
+        depth="0.3"
+        height="1"
+        width="2.5"
+        color="#B8860B">
+    </a-box>
+
+    <a-text
+    value="HELP"
+    position="-2 1 -5.7"
+    align="center">
+</a-text>
+
+<a-box
+        id="walkbutton"
+        class="clickable"
+        position="2 1 -6"
+        depth="0.3"
+        height="1"
+        width="2.5"
+        color="#B8860B">
+
+    </a-box>
+
+
+<a-text
+    value="Walkaway"
+    position="2 1 -5.7"
+    align="center"
+    color="white">
+</a-text>
+
+<a-text
+id="result"
+value=""
+position="0 4 -5"
+align="center"
+color="yellow">
+</a-text>
+
+<a-camera postion 0 1.6 0>
+    <a-cursor raycaster="objects: .clickable"></a-cursor>
+</a-camera>
+
+    
+        </a-scene>
+
+        <script src="script.js"></script>
+
+    </body>
+    </html>
